@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab1 HTML Part2</title>
+</head>
+
+<body id="top">
+    <!--Name and PNU-->
+    <div style="text-align: center;">
+        <h2>Jumanah Alharbi</h2>
+        <a href="https://lms2.pnu.edu.sa/" target="_self">
+            <img src="pics\PNU.jpeg" alt="PNU Logo" width="100" height="100">
+        </a>
+
+        <!-- Add Audio -->
+        <br>
+        <audio controls>
+            <source src="pics/PNUAudio.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+
+        <!--Video-->
+        <video width="320" height="240" controls>
+            <source src="pics\pnuVideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!--start of form -->
+    <h2>Feedback Form</h2>
+    <form action="myPage.php" method="POST">
+        <button onclick="window.location.href='#end'">Go to End of Form</button>
+        <br>
+        <br>
+
+        <!--firtName input-->
+        <div>
+            <label>First name:</label>
+            <input type="text" name="firstname" size="50" required>
+        </div>
+
+        <!--lastname-->
+        <div>
+            <label>Last name:</label>
+            <input type="text" name="lastname" required>
+        </div>
+
+        <!-- Password  -->
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" size="30" maxlength="8" required>
+        </div>
+
+        <!--Email-->
+        <div>
+            <label>E-mail Address:</label>
+            <input type="email" name="email" placeholder="name@pnu.edu.sa" required>(your.name@domain.com)
+        </div>
+
+        <!--Comments-->
+        <div>
+            <label>Comments:</label><br>
+            <textarea rows="5" cols="50" name="comments">
+Enter Comments here...
+            </textarea>
+        </div>
+
+        <!--Date-->
+        <div>
+            <label>Date:</label>
+            <input type="date" value="2023-09-04">
+
+        </div>
+
+        <!--Color-->
+        <div>
+            <label>Choose Color:</label>
+            <input type="color">
+        </div>
+        <br>
+
+        <!--File uploa-->
+        <div>
+            <label>Upload File:</label>
+            <input type="file" name="fileupload" accept=".pdf">
+        </div>
+
+        <br>
+        <!--Checkboxe-->
+        <div>
+            <label>What do you like about our website?</label><br>
+            <input type="checkbox" name="feature" value="Website Design"> Website Design<br>
+            <input type="checkbox" name="feature" value="Brand Story"> Brand Story<br>
+            <input type="checkbox" name="feature" value="Color scheme"> Color scheme<br>
+        </div>
+        <br>
+
+        <!--Radio buttons-->
+        <div>
+            <label>How did you hear about us?</label>
+            <input type="radio" name="heardAboutUS" value="search_engine"> Search engine
+            <input type="radio" name="heardAboutUS" value="social_media"> Social Media
+            <input type="radio" name="heardAboutUS" value="referral"> Referral
+            <input type="radio" name="heardAboutUS" value="other"> Other
+        </div>
+        <br>
+
+        <!--buttons-->
+        <div>
+            <input type="submit" name="submitData" value="submit">
+            <input type="reset" name="reset" value="clear">
+            <input type="reset" name="reset" value="cancel">
+
+        </div>
+
+
+
+
+    </form>
+    <!--end of form-->
+    <div id="end"></div>
+
+    <!-- Back to Top Button -->
+    <button onclick="window.location.href='#top'">Back to Top</button>
+
+
+
+</body>
+
+</html>
